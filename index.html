@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mikael05</title>
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=DM+Sans:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#15161a; --surface:#1d1f25; --line:#2c2f38;
+  --text:#ece8df; --muted:#9a9ca6; --accent:#a9bbff;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:64px 0 48px}
+.wordmark{font:800 clamp(3rem,15vw,7.5rem)/.95 "Unbounded",system-ui,sans-serif;letter-spacing:-.03em;margin:0;word-break:break-word}
+.tagline{margin:28px 0 0;font-size:1.2rem;color:var(--muted);max-width:30ch}
+.cta{display:inline-block;margin-top:36px;align-self:flex-start;padding:14px 26px;border-radius:999px;background:var(--accent);color:#15161a;font-weight:500;text-decoration:none;transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:600 1.25rem/1.3 "Unbounded",system-ui,sans-serif;margin:0 0 20px}
+p{margin:0 0 16px;max-width:60ch}
+
+.projet{display:block;text-decoration:none;background:var(--surface);border-radius:14px;padding:24px;margin-top:8px;transition:background .15s}
+.projet:hover{background:#23262d}
+.projet strong{display:block;font:600 1.1rem "Unbounded",system-ui,sans-serif;margin-bottom:6px}
+.projet span{color:var(--muted)}
+
+.contact a.big{display:block;font:600 clamp(1.2rem,5vw,1.7rem) "Unbounded",system-ui,sans-serif;text-decoration:none;padding:14px 0;border-bottom:1px solid var(--line)}
+.contact a.big:hover{color:var(--accent)}
+footer{padding:40px 0 56px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <h1 class="wordmark">Mikael05</h1>
+    <p class="tagline">Crois en toi.</p>
+    <a class="cta" href="#contact">Me contacter</a>
+  </header>
+
+  <section id="apropos">
+    <h2>Qui je suis</h2>
+    <p>Je m’appelle Mikael, je suis basé à Cotonou, au Bénin. Étudiant en géographie et aménagement du territoire, je travaille aussi sur des projets culturels et urbains.</p>
+    <p>Mon truc : transformer une idée en événement concret, avec une équipe, des partenaires et un vrai public.</p>
+  </section>
+
+  <section id="projet">
+    <h2>Mon projet en cours</h2>
+    <a class="projet" href="#contact">
+      <strong>Made For Bounce</strong>
+      <span>Un grand festival urbain annuel à Cotonou. Partenaires et sponsors, parlons-en.</span>
+    </a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <a class="big" href="https://wa.me/2290148057370">WhatsApp</a>
+    <a class="big" href="mailto:Mikaelfico85@gmail.com">Email</a>
+  </section>
+
+  <footer>© 2026 Mikael05 · Cotonou, Bénin</footer>
+</main>
+</body>
+</html>
